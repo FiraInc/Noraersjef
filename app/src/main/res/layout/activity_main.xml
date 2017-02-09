@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fira.noraersjef.MainActivity">
+
+    <Button
+        android:id="@+id/sjefenKnapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Hvem er sjef?"
+        android:onClick="noraErSjef"/>
+
+    <ImageView
+        android:id="@+id/sjefen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sjefenselv"
+        android:onClick="sjefCLicked"/>
+
+    <TextView
+        android:id="@+id/sjefenTekst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nora er sjef!"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:text="0"/>
+
+    <Button
+        android:id="@+id/upgradesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="oppgrader"
+        android:onClick="purchaseUpgrades"/>
+
+    <Button
+        android:id="@+id/upgradeButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/upgradesButton"
+        android:text="1 sjef per sekund (PRIS)"
+        android:onClick="purchaseUpgrade1"/>
+
+
+</RelativeLayout>
